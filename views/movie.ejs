@@ -1,0 +1,93 @@
+<% include partials/header %>
+
+
+
+  <img class="mt-5 card-img-top rounded mx-auto d-block" style='width: 50%;' src="https://image.tmdb.org/t/p/w500/<%= singleMovie.backdrop_path %>"
+    alt="Card image cap">
+  <div class="card mb-2 mt-2">
+
+    <div class="card-body">
+      <div class='row'>
+        <div class='col-5'>
+          <h5 class="card-title text-center font-weight-bold pl-3">
+            <%= singleMovie.title %>
+          </h5>
+          <p class="card-text font-weight-bold">
+            <%= singleMovie.overview %>
+          </p>
+          <p class="card-text pl-3">
+            <p class="text-muted">Budget: $
+              <%= singleMovie.budget %>
+            </p>
+          </p>
+        </div>
+
+        <div class='col-7'>
+
+
+          <div class='row'>
+            <div style='width: 33%;'>
+              <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/<%= credits.cast[0].profile_path %>" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">
+                    <%= credits.cast[0].name %>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div style='width: 33%;'>
+              <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/<%= credits.cast[1].profile_path %>" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">
+                    <%= credits.cast[1].name %>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div style='width: 33%;'>
+              <div class="card">
+                <img class="card-img-top" src="https://image.tmdb.org/t/p/w500/<%= credits.cast[2].profile_path %>" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">
+                    <%= credits.cast[2].name %>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <style>
+    body {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://image.tmdb.org/t/p/w500/<%= singleMovie.belongs_to_collection.backdrop_path %>');
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.616);
+    }
+
+    .navbar-brand {
+      font-size: 30px;
+      color: rgb(161, 226, 161);
+    }
+
+  </style>
+
+
+
+  <% include partials/footer %>

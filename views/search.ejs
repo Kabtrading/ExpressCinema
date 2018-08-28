@@ -1,0 +1,31 @@
+<% include partials/header %>
+
+    <div class='row'>
+        <div class='col-12 text-center'>
+           
+            <div>
+                <% movie.results.forEach((movie) => { %>
+                    <div>
+                        <div class="media border-dark">
+                            <img class="mr-3 moviePoster" src="https://image.tmdb.org/t/p/w500<%= movie.poster_path %>" alt='sorry, no images to display'>
+                            <div class="media-body">
+                                <h5 class="mt-0">
+                                    <a href='/movie/<%= movie.id %>'>
+                                    <%= movie.title %>
+                                    </a>
+                                </h5>
+                                <p><%= movie.overview %></p>
+                                    <hr />
+                                   <p> <%= movie.release_date %></p>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <% }) %>
+                            <a href='/'>HOME</a>
+                    </div>
+            </div>
+        </div>
+
+
+        <% include partials/footer %>

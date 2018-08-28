@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  height: auto; }
+
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/avengers.jpg);
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Vollkorn',serif; }
+  .container h5 {
+    color: #1b8848;
+    font-size: 30px; }
+  .container p {
+    font-size: 20px; }
+  .container img {
+    height: 30%;
+    width: 30%; }
+  .container .navbar-brand {
+    font-size: 30px;
+    color: #a1e2a1; }
+  .container .media {
+    max-width: 50%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.753);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 2px; }
+
+a:link,
+a:visited {
+  color: #169e83;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #169e83;
+  transition: border-bottom 0.2s, color 0.2s; }
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent; }
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+  background-color: #169e83;
+  color: #fff; }
