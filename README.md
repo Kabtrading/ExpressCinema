@@ -24,9 +24,5 @@ then make a selection to get a few simple details about the film.
   <span>Plan on adding better search functionality, as well as style</span>
 </div>
 
-<div>
-![alt text]()
-</div>
 
-
-
+![alt text](https://static.vecteezy.com/system/resources/previews/000/157/184/non_2x/retro-movie-cinema-vector-background.jpg)
